@@ -1,25 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import Home from './js/components/home'
+import Imput from './js/components/imput'
+import injectContext from "./js/store/appContext"
+import "./css/app.css"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div className='todo container'>
+    <h1 className='head-todo display-3 text-center'>To-Do List!!</h1>
+    <Imput/>
+  </div>
   );
 }
 
-export default App;
+export default injectContext(App);
