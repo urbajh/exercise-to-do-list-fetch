@@ -1,4 +1,3 @@
-import Home from './js/components/home'
 import Imput from './js/components/imput'
 import injectContext from "./js/store/appContext"
 import "./css/app.css"

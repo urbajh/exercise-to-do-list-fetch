@@ -1,6 +1,4 @@
 body{
-    /*background-color: rgb(36, 37, 37);
-    color: white;*/
     margin: 0;
     font-family:  'Segoe UI', 'Roboto', 'Oxygen',
         'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -14,7 +12,6 @@ body{
     }
     li{ 
     height: 50px;
-    
   }
   .btn-delete-task{
     display: none;
@@ -22,9 +19,13 @@ body{
   li:hover > .btn-delete-task{
     display: inline;
   }
+  .btn-delete-all{
+    margin: 8px 0px 8px 0px;
+    float: right;
+  }
   .items-left, .input-form-todo{
       display: block;
-      /*background-color: #fff;*/
+      background-color: #fff;
       border: 1px solid rgba(0,0,0,.125);
       height: 30px;
       padding: 0px 10px;
